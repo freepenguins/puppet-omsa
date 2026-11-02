@@ -1,0 +1,4 @@
+---
+omsa::repos::apt_location: 'https://linux.dell.com/repo/community/debian'
+omsa::repos::apt_repos: 'openmanage/840'
+omsa::service_name: 'dsm_sa_datamgrd'

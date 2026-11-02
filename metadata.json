@@ -1,0 +1,44 @@
+{
+  "name": "vpgrp-omsa",
+  "version": "1.0.6",
+  "author": "vpgrp",
+  "summary": "Puppet module to install, deploy and configure Dell OMSA.",
+  "license": "Apache-2.0",
+  "source": "https://git.vpgrp.io/puppet/puppet-omsa",
+  "project_page": "https://git.vpgrp.io/puppet/puppet-omsa",
+  "issues_url": "https://git.vpgrp.io/puppet/puppet-omsa/issues",
+  "dependencies": [
+    {"name":"puppetlabs/apt","version_requirement":">= 1.5.0 < 6.0.0"}
+  ],
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04",
+        "16.04"
+      ]
+    }
+  ],
+  "tags": [
+    "omsa",
+    "dell",
+    "monitoring",
+    "supervision"
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 2.7.0 < 6.0.0"
+    }
+  ]
+}

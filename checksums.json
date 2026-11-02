@@ -1,0 +1,17 @@
+{
+  "CHANGELOG.md": "e0b4d101a25b930e2e06e6bba7d40ee7",
+  "CONTRIBUTING.md": "0047c96c421dcd0207f19f0d9a7895cf",
+  "LICENSE": "cd634e403fff6d6897d05e9805faf470",
+  "Puppetfile": "2a1803498f0a0bea83b3dfe6362c6e23",
+  "README.md": "5698adce104c86096b6c39845490b48c",
+  "Rakefile": "748dbe27800eeb8551c0aa3bc992c1f0",
+  "manifests/init.pp": "23dadbdeeff95e87fc940ea2c6a189ab",
+  "manifests/params.pp": "7cee29d544ec06535b602e35bc1e443e",
+  "manifests/repos.pp": "c814e5bbe399437dc02c08520df80b3e",
+  "metadata.json": "aef72040aaf613f9966b278b1a4bef72",
+  "templates/omsa.repo.erb": "3adec6bab0805c9983a06554568c72be",
+  "test/integration/centos/init.pp": "f97f2b6aa553a9c9e0fa94a852f47ddc",
+  "test/integration/centos/serverspec/debian_spec.rb": "bb23a220493f680da4f9cf49a3093148",
+  "test/integration/debian/init.pp": "02658d725b6ee7ff925c3cbcfffe9ed7",
+  "test/integration/debian/serverspec/debian_spec.rb": "bb23a220493f680da4f9cf49a3093148"
+}

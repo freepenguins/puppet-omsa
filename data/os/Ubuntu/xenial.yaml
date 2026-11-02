@@ -1,0 +1,2 @@
+---
+omsa::repos::apt_repos: 'openmanage/840'

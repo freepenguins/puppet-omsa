@@ -1,0 +1,3 @@
+---
+omsa::repos::apt_location: 'http://linux.dell.com/repo/community/openmanage/950/focal'
+omsa::repos::apt_repos: 'main'

@@ -1,0 +1,5 @@
+---
+omsa::repos::apt_location: 'https://linux.dell.com/repo/community/openmanage/11000/jammy'
+omsa::repos::apt_release: 'jammy'
+omsa::repos::apt_repos: 'main'
+omsa::service_name: 'dsm_sa_datamgrd'

@@ -1,0 +1,2 @@
+---
+omsa::repos::apt_release: 'jessie'
