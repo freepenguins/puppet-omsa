@@ -1,19 +1,51 @@
 {
-  "name": "vpgrp-omsa",
-  "version": "1.0.6",
-  "author": "vpgrp",
-  "summary": "Puppet module to install, deploy and configure Dell OMSA.",
+  "name": "freepenguins-omsa",
+  "version": "4.0.0",
+  "author": "freepenguins",
+  "summary": "Installs and configures Dell OpenManage Server Administrator (OMSA) on Dell PowerEdge servers.",
   "license": "Apache-2.0",
-  "source": "https://git.vpgrp.io/puppet/puppet-omsa",
-  "project_page": "https://git.vpgrp.io/puppet/puppet-omsa",
-  "issues_url": "https://git.vpgrp.io/puppet/puppet-omsa/issues",
+  "source": "https://github.com/freepenguins/puppet-omsa",
+  "project_page": "https://github.com/freepenguins/puppet-omsa",
+  "issues_url": "https://github.com/freepenguins/puppet-omsa/issues",
   "dependencies": [
-    {"name":"puppetlabs/apt","version_requirement":">= 1.5.0 < 6.0.0"}
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 9.0.0 < 10.0.0"
+    },
+    {
+      "name": "puppetlabs/apt",
+      "version_requirement": ">= 9.0.0 < 11.0.0"
+    },
+    {
+      "name": "puppetlabs/inifile",
+      "version_requirement": ">= 5.0.0 < 7.0.0"
+    },
+    {
+      "name": "puppetlabs/yumrepo_core",
+      "version_requirement": ">= 1.0.0 < 3.0.0"
+    }
   ],
-  "data_provider": null,
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "12"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "22.04"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
       "operatingsystemrelease": [
         "7",
         "8",
@@ -21,24 +53,35 @@
       ]
     },
     {
-      "operatingsystem": "Ubuntu",
+      "operatingsystem": "Rocky",
       "operatingsystemrelease": [
-        "12.04",
-        "14.04",
-        "16.04"
+        "8",
+        "9"
       ]
+    },
+    {
+      "operatingsystem": "AlmaLinux",
+      "operatingsystemrelease": [
+        "8",
+        "9"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 7.0.0 < 9.0.0"
     }
   ],
   "tags": [
     "omsa",
     "dell",
-    "monitoring",
-    "supervision"
+    "openmanage",
+    "poweredge",
+    "hardware",
+    "monitoring"
   ],
-  "requirements": [
-    {
-      "name": "puppet",
-      "version_requirement": ">= 2.7.0 < 6.0.0"
-    }
-  ]
+  "pdk-version": "3.4.0",
+  "template-url": "https://github.com/puppetlabs/pdk-templates#3.8.0",
+  "template-ref": "tags/3.8.0-0-gf1124a6"
 }
