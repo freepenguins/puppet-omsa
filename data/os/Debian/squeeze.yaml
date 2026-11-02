@@ -1,5 +1,0 @@
----
-omsa::repos::apt_location: 'http://linux.dell.com/repo'
-omsa::repos::apt_release: '/'
-omsa::repos::apt_repos: ''
-

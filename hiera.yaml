@@ -1,17 +1,14 @@
 ---
 version: 5
 
-defaults:  # Used for any hierarchy level that omits these keys.
-  datadir: data         # This path is relative to hiera.yaml's directory.
-  data_hash: yaml_data  # Use the built-in YAML backend.
+defaults:
+  datadir: 'data'
+  data_hash: 'yaml_data'
 
 hierarchy:
-  - name: "Operating System"
-    paths:
-        # Used to distinguish between Debian and Ubuntu
-      - "os/%{facts.os.name}/%{facts.os.name}-%{facts.os.release.major}.yaml"
-      - "os/%{facts.os.name}/%{facts.os.distro.codename}.yaml"
-      - "os/%{facts.os.name}.yaml"
-      - "os/%{facts.os.family}.yaml"
+  - name: 'Operating system family and major release'
+    path: 'os/%{facts.os.family}/%{facts.os.release.major}.yaml'
+  - name: 'Operating system family'
+    path: 'os/%{facts.os.family}.yaml'
   - name: 'common'
     path: 'common.yaml'

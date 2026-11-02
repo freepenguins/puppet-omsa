@@ -1,0 +1,4 @@
+---
+# Dell's last repository with OMSA for EL7 (10.1.0.0); later DSU releases
+# have no RHEL7_64 directory.
+omsa::repo::yum_baseurl: 'https://linux.dell.com/repo/hardware/DSU_22.08.12/os_dependent/RHEL7_64/'
